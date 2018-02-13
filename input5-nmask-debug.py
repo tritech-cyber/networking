@@ -1,5 +1,5 @@
 def getsubnet(cidr,nmask):
-	print('cidr',cidr)
+	print('cidr',cidr,nmask)
 	if(cidr == 32):
 		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
 	if(cidr == 31):
@@ -88,7 +88,7 @@ def main():
 	print (o1,o2,o3,o4, "/", cidr)
 	ipv4[0] = o1; ipv4[1] = o2; ipv4[2] = o3; ipv4[3] = o4;   
 	nmask = getsubnet(cidr,nmask)
-	print(ipv4,nmask,end='')
+	print(ipv4,cidr,nmask,end='')
 main()
 
 
