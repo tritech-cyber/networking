@@ -1,6 +1,7 @@
 def getsubnet(cidr,nmask):
 	print('cidr',cidr)
-	if(cidr == 32):
+	c = 16
+	if(c == 32):
 		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
 	if(cidr == 31):
 		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
@@ -66,7 +67,7 @@ def getsubnet(cidr,nmask):
 		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
 	if(cidr == 0):
 		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	print('print nmask',nmask)
+		print('******  print nmask  ******',nmask)
 	return nmask
 
 
