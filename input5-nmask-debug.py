@@ -1,5 +1,5 @@
 # input5-nmask-debug.py
-def getsubnet(cidr,nmask):
+def getnmask(cidr,nmask):
 	print('cidr',cidr,nmask)
 	cidr = int(cidr)
 	if cidr == 32:
@@ -8,12 +8,12 @@ def getsubnet(cidr,nmask):
 		nmask = [255,255,255,254]
 	if cidr == 30:
 		nmask = [255,255,255,252]
-		if cidr == 32:
+	if cidr == 32:
 		nmask = [255,255,255,255]
 	if cidr == 31:
 		nmask = [255,255,255,254]
 	if cidr == 30:
-		nmask = [255,255,255,252]Wind
+		nmask = [255,255,255,252]
 	print('print nmask',nmask)
 	return nmask
 
