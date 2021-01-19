@@ -1,4 +1,4 @@
-CW Coleman text
+CW Coleman 210118 
 
 IP              192.168.1.10/25
 NET-MASK         255.255.255.128
@@ -35,3 +35,7 @@ CALCULATE BROADCAST
 1100 0000 . 1010 1000 . 0000 0001 . 1111 1111 (OR OF NETWORK ID AND INVERTED SUB-NET MASK)
 ---- ---- . ---- ---- . ---- ---- . ---- ----
 192            168          1          255        BROADCAST
+
+
+TOTAL HOSTS
+TOTAL NETWORKS
